@@ -4,6 +4,8 @@
 static inline void testRoutines(void) {
 #if(PROGRAM_ROUTINE == BLINK_TEST)
     blink_test();
+#elif(PROGRAM_ROUTINE == STEPPER_MOTOR_TEST)
+    stepper_motor_test();
 #endif
 }
 

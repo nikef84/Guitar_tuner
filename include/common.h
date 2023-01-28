@@ -8,8 +8,10 @@
 #include <tests.h>
 
 // List of all possible programs
-#define MAIN_ROUTINE               0
-#define BLINK_TEST           1
+#define MAIN_ROUTINE                 0
+#define BLINK_TEST                   1
+#define STEPPER_MOTOR_TEST           2
+
 
 
 // Selection of program to run

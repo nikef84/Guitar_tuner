@@ -1,6 +1,7 @@
 # C source files
 PROJECT_CSRC 	= 	src/main.c \
 					tests/blink_test.c \
+					tests/stepper_motor_test.c \
 					
 
 
