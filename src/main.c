@@ -2,7 +2,7 @@
 
 
 static inline void testRoutines(void) {
-#if(PROGRAM_ROUTINE == STEP_ENGINE_TEST)
+#if(PROGRAM_ROUTINE == BLINK_TEST)
     blink_test();
 #endif
 }

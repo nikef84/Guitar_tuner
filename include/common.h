@@ -9,10 +9,10 @@
 
 // List of all possible programs
 #define MAIN_ROUTINE               0
-#define STEP_ENGINE_TEST           1
+#define BLINK_TEST           1
 
 
 // Selection of program to run
-#define PROGRAM_ROUTINE STEP_ENGINE_TEST
+#define PROGRAM_ROUTINE BLINK_TEST
 
 #endif /* INCLUDE_COMMON_H_ */
