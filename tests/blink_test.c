@@ -6,6 +6,6 @@ void blink_test(){
   palSetPadMode(GPIOC, GPIOC_LED, PAL_MODE_OUTPUT_OPENDRAIN);
   while (true) {
      palTogglePad(GPIOC, GPIOC_LED);
-     chThdSleepMilliseconds(1000);
+     chThdSleepMilliseconds(100);
   }
 }

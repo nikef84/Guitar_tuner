@@ -1,7 +1,10 @@
 # C source files
 PROJECT_CSRC 	= 	src/main.c \
+					src/terminal_write.c \
+					src/findFreqsAndAmps/find_peak_freqs.c \
 					tests/blink_test.c \
 					tests/stepper_motor_test.c \
+					tests/terminal_write_test.c \
 					
 
 

@@ -6,6 +6,8 @@ static inline void testRoutines(void) {
     blink_test();
 #elif(PROGRAM_ROUTINE == STEPPER_MOTOR_TEST)
     stepper_motor_test();
+#elif(PROGRAM_ROUTINE == TERMINAL_WRITE_TEST)
+    terminal_write_test();
 #endif
 }
 

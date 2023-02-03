@@ -11,6 +11,6 @@ void stepper_motor_test(void){
     if (state == 1) state = 8;
     else state = state >> 1;
 
-    chThdSleepMilliseconds(10);
+    chThdSleepMilliseconds(5);
   }
 }
