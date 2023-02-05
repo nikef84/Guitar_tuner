@@ -7,7 +7,7 @@ void terminal_write_test(void){
   debugStreamInit();
   palSetPadMode(GPIOC, GPIOC_LED, PAL_MODE_OUTPUT_OPENDRAIN);
   uint16_t num = 0;
-  while (true) {
+  while (num <= 10) {
     dbgPrintf("NUM = %d\r\n", num);
     palTogglePad(GPIOC, GPIOC_LED);
     num = num + 1;
