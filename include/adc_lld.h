@@ -24,6 +24,16 @@
 void adcSimpleInit(void);
 
 /*
+ * @brief   Stops timer and ADC.
+ *
+ * @note    ADC1 is used.
+ *
+ * @note    GPTD3 is used.
+ */
+void adcSimpleUninit(void);
+
+
+/*
  * @bried       Reads data from the ADC and writes it to the array.
  *
  * @param[in]   buf                 An array in which data will be write from the adc.

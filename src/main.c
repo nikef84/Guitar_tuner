@@ -10,6 +10,8 @@ static inline void testRoutines(void) {
     terminal_write_test();
 #elif(PROGRAM_ROUTINE == ADC_TEST)
     adc_test();
+#elif(PROGRAM_ROUTINE == SIGNAL_RECORDING_TEST)
+    signal_recording_test();
 #endif
 }
 

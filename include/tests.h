@@ -5,6 +5,6 @@ void blink_test(void);
 void stepper_motor_test(void);
 void terminal_write_test(void);
 void adc_test(void);
-void endcbfun(ADCDriver* adcp);
+void signal_recording_test(void);
 
 #endif /* INCLUDE_TESTS_H_ */

@@ -25,7 +25,7 @@ static const GPTConfig tim3_conf = {
  *
  * @note    The channel 0 from the ADC1 is used.
  */
-ADCConversionGroup adc0_conf = {
+static ADCConversionGroup adc0_conf = {
     .circular = false, // Non-continuous mode.
 
     .num_channels = 1, // Used only one channel.
@@ -58,6 +58,18 @@ void adcSimpleInit(void){
     adcStart(ADC_1, NULL);
     palSetLineMode(ADC_LINE_CH0, PAL_MODE_INPUT_ANALOG);
     gptStartContinuous(GPT_3, 1000);
+}
+
+/*
+ * @brief   Stops timer and ADC.
+ *
+ * @note    ADC1 is used.
+ *
+ * @note    GPTD3 is used.
+ */
+void adcSimpleUninit(void){
+    gptStop(GPT_3);
+    adcStop(ADC_1);
 }
 
 /*

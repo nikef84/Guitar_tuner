@@ -1,23 +1,23 @@
-#include <adc_lld.h>
+#include "adc_lld.h"
 #include "terminal_write.h"
 
-
-// Выделяем буфер под преобразование
-
+#define ARRAY_LENGTH        5000
+static uint16_t array[ARRAY_LENGTH] = {0};
 
 void adc_test(void) {
 
     halInit();
     chSysInit();
     debugStreamInit();
-    // Устанавливаем ногу в режим на вход и запускаем АЦП модуль
+    dbgPrintf("start\r\n");
     adcSimpleInit();
-    uint16_t array[50] = {0};
-
+    systime_t begin = chVTGetSystemTime();
     while (true) {
-        adcSimpleRead(array, 50);
-        dbgPrintf("%d\r\n", array[49]);
-        chThdSleepMilliseconds(2000);
+        adcSimpleRead(array, ARRAY_LENGTH);
+        systime_t end = chVTGetSystemTime();
+        dbgPrintf("time = %d\r\n", end - begin);
+        begin = chVTGetSystemTime();
+
     }
 
 }
