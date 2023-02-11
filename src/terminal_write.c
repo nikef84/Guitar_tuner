@@ -11,8 +11,8 @@ static BaseSequentialStream *debug_stream = NULL;
 void debugStreamInit( void )
 {
     sdStart( debug_serial, &sd_st_cfg );
-    palSetPadMode( GPIOA, 9, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // TX
-    palSetPadMode( GPIOA, 10, PAL_MODE_INPUT_PULLUP); // RX
+    palSetPadMode( GPIOA, 9, PAL_MODE_STM32_ALTERNATE_PUSHPULL); // TX - white
+    palSetPadMode( GPIOA, 10, PAL_MODE_INPUT_PULLUP); // RX - green
 
     debug_stream = (BaseSequentialStream *)debug_serial;
 }

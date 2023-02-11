@@ -8,6 +8,8 @@ static inline void testRoutines(void) {
     stepper_motor_test();
 #elif(PROGRAM_ROUTINE == TERMINAL_WRITE_TEST)
     terminal_write_test();
+#elif(PROGRAM_ROUTINE == ADC_TEST)
+    adc_test();
 #endif
 }
 

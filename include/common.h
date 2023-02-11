@@ -13,10 +13,12 @@
 #define BLINK_TEST                   1
 #define STEPPER_MOTOR_TEST           2
 #define TERMINAL_WRITE_TEST          3
+#define ADC_TEST                     4
+
 
 
 
 // Selection of program to run
-#define PROGRAM_ROUTINE TERMINAL_WRITE_TEST
+#define PROGRAM_ROUTINE ADC_TEST
 
 #endif /* INCLUDE_COMMON_H_ */
