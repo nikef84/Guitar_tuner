@@ -15,11 +15,11 @@
 #define TERMINAL_WRITE_TEST          3
 #define ADC_TEST                     4
 #define SIGNAL_RECORDING_TEST        5
-
+#define FFT_TEST                     6
 
 
 
 // Selection of program to run
-#define PROGRAM_ROUTINE SIGNAL_RECORDING_TEST
+#define PROGRAM_ROUTINE FFT_TEST
 
 #endif /* INCLUDE_COMMON_H_ */

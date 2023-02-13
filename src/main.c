@@ -12,6 +12,8 @@ static inline void testRoutines(void) {
     adc_test();
 #elif(PROGRAM_ROUTINE == SIGNAL_RECORDING_TEST)
     signal_recording_test();
+#elif(PROGRAM_ROUTINE == FFT_TEST)
+    fft_test();
 #endif
 }
 
