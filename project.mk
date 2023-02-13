@@ -22,8 +22,6 @@ PROJECT_CPPSRC 	=
 # Directories to search headers in
 PROJECT_INCDIR	= include \
 				  tests \
-                  include/stateDriver \
-                  include/controllFunc\
  
 
 # Additional libraries
