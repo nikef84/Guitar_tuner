@@ -16,10 +16,11 @@
 #define ADC_TEST                     4
 #define SIGNAL_RECORDING_TEST        5
 #define FFT_TEST                     6
+#define PWM_TEST                     7
 
 
 
 // Selection of program to run
-#define PROGRAM_ROUTINE FFT_TEST
+#define PROGRAM_ROUTINE PWM_TEST
 
 #endif /* INCLUDE_COMMON_H_ */

@@ -7,5 +7,6 @@ void terminal_write_test(void);
 void adc_test(void);
 void signal_recording_test(void);
 void fft_test(void);
+void pwm_test(void);
 
 #endif /* INCLUDE_TESTS_H_ */

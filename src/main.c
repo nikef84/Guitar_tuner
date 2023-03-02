@@ -14,6 +14,8 @@ static inline void testRoutines(void) {
     signal_recording_test();
 #elif(PROGRAM_ROUTINE == FFT_TEST)
     fft_test();
+#elif(PROGRAM_ROUTINE == PWM_TEST)
+    pwm_test();
 #endif
 }
 
